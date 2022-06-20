@@ -1,0 +1,61 @@
+/** @format */
+
+#root>div {
+    width: 100vw;
+    height: 100vh;
+    background-color: yellow;
+}
+
+#root>div>div {
+    width: 90vw;
+    height: 90vh;
+    background-color: rgb(132, 132, 116);
+}
+
+#root>div>div>div {
+    width: 80vw;
+    height: 80vh;
+    background-color: rgb(39, 214, 179);
+}
+
+#root>div>div>div>div {
+    width: 70vw;
+    height: 70vh;
+    background-color: rgb(128, 186, 125);
+}
+
+#root>div>div>div>div>div {
+    width: 60vw;
+    height: 60vh;
+    background-color: rgb(217, 24, 120);
+}
+
+#root>div>div>div>div>div>div {
+    width: 50vw;
+    height: 50vh;
+    background-color: rgb(205, 205, 212);
+}
+
+#root>div>div>div>div>div>div>div {
+    width: 40vw;
+    height: 40vh;
+    background-color: rgb(37, 40, 206);
+}
+
+#root>div>div>div>div>div>div>div>div {
+    width: 30vw;
+    height: 30vh;
+    background-color: rgb(161, 181, 198);
+}
+
+#root>div>div>div>div>div>div>div>div>div {
+    width: 20vw;
+    height: 20vh;
+    background-color: rgb(104, 104, 124);
+}
+
+#root>div>div>div>div>div>div>div>div>div>div {
+    width: 10vw;
+    height: 10vh;
+    background-color: rgb(79, 206, 37);
+}
