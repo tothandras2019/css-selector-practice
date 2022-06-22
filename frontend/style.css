@@ -12,7 +12,7 @@ div>div {
 div>div>div {
     width: 90vh;
     height: 90vh;
-    background-color: rgb(132, 132, 116);
+    background-color: rgb(154, 154, 35);
 }
 
 div>div>div>div {
@@ -28,9 +28,11 @@ div>div>div>div>div {
 }
 
 div>div>div>div>div>div {
+    /* position: relative; */
     width: 60vh;
     height: 60vh;
     background-color: rgb(217, 24, 120);
+    /* border: 2px dashed green; */
 }
 
 div>div>div>div>div>div>div {
@@ -60,6 +62,8 @@ div>div>div>div>div>div>div>div>div>div {
 div>div>div>div>div>div>div>div>div>div>div {
     width: 10vh;
     height: 10vh;
+    min-width: 100px;
+    min-height: 100px;
     background-color: rgb(251, 0, 38);
 }
 
@@ -79,15 +83,36 @@ div>div>div>div>div>div>div>div>div>div>div {
     border-radius: 50%;
 }
 
+div {
+    background-color: gray;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    /* left: 0;
+    top: 0; */
+}
+
+.most-inner {
+    /* megkeresei a legelső nem static felmenőt */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+}
+
 
 /* 
 .most-inner:hover {
+    
     background-color: gold;
+    
 } */
 
-.most-outer .inner {
+
+/* .most-outer .inner {
     border: 5px solid rgb(7, 7, 7);
-}
+} */
 
 
 /* olyan mintha egy html elem lenne 'force element'-k */
