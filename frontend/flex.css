@@ -1,0 +1,25 @@
+/** @format */
+
+#root {
+    width: 100%;
+    height: 100vh;
+    background-color: cadetblue;
+}
+
+.flex-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-child {
+    width: 100px;
+    height: 100px;
+    min-width: 80px;
+    min-height: 80px;
+    background-color: gray;
+    border: 1px solid black;
+}
