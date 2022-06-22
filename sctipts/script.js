@@ -1,19 +1,21 @@
 /** @format */
 
+let buttonElement = "1";
+
 async function loadEvent() {
     console.log(`Loaded`);
     let rootElement = document.getElementById(`root`);
 
     rootElement.innerHTML = `<button>Press Start </button>`;
-    console.log(document.querySelector(`button`));
+    buttonElement = await document.querySelector(`button`);
+    console.log(buttonElement);
 }
-
-console.log(document.querySelector(`button`));
 
 const flexChilds = document.querySelectorAll(`.flex-child`);
 // console.log(...flexChilds);
 
-window.addEventListener(`load`, loadEvent);
+window.addEventListener(`load`, loadEvent.bind(buttonElement));
+console.log(buttonElement);
 
 //#region CALLBACK
 function thisIsCallBack() {
@@ -24,5 +26,5 @@ function callThisFirst(anyCallbackFunction) {
     anyCallbackFunction();
 }
 
-callThisFirst(thisIsCallBack);
+// callThisFirst(thisIsCallBack);
 //#endregion
