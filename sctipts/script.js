@@ -1,21 +1,36 @@
 /** @format */
 
-let buttonElement = "1";
+let buttonElement;
 
-async function loadEvent() {
-    console.log(`Loaded`);
-    let rootElement = document.getElementById(`root`);
+async function loadEvent(button) {
+    await new Promise((resolve, reject) => {
+            let rootElement = document.getElementById(`root`);
 
-    rootElement.innerHTML = `<button>Press Start </button>`;
-    buttonElement = await document.querySelector(`button`);
-    console.log(buttonElement);
+            rootElement.innerHTML = `<button>Press Start </button>`;
+            //button = document.querySelector(`button`);
+            console.log(button);
+            if (!button) {
+                console.log(button);
+                reject(rootElement, `Cannot find button`);
+            }
+            resolve(button);
+        })
+        .then((res) => {
+            console.log(res, 2);
+        })
+        .catch((rej, msg) => {
+            console.log(rej, msg);
+            rej.innerHTML = `<button>${msg}</button>`;
+        });
 }
 
 const flexChilds = document.querySelectorAll(`.flex-child`);
-// console.log(...flexChilds);
 
-window.addEventListener(`load`, loadEvent.bind(buttonElement));
-console.log(buttonElement);
+async function windowEvent() {
+    await window.addEventListener(`load`, loadEvent(buttonElement));
+}
+
+windowEvent();
 
 //#region CALLBACK
 function thisIsCallBack() {

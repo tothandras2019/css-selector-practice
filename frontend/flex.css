@@ -1,11 +1,16 @@
 /** @format */
 
+on
+/** @format */
+
 #root {
     width: 100%;
     height: 100vh;
     background-color: cadetblue;
 }
 
+
+/* 
 .flex-container {
     height: 100vh;
     display: flex;
@@ -22,4 +27,22 @@
     min-height: 80px;
     background-color: gray;
     border: 1px solid black;
+}
+
+*/
+
+#main-image {
+    background-color: black;
+    width: 500px;
+    height: 500px;
+    background-image: url("https://codecool.com/wp-content/uploads/2021/09/Home-Header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#main-image>img {
+    width: 500px;
+    height: 500px;
+    object-fit: fill;
 }
